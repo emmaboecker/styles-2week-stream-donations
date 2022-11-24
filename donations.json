@@ -1,42 +1,130 @@
 [
     {
+        "name": "dawncosmos",
+        "amount": 224.53
+    },
+    {
+        "name": "tbhmens",
+        "amount": 10.32
+    },
+    {
+        "name": "ellieno0te",
+        "amount": 100.0
+    },
+    {
+        "name": "JacobSilverLIVE",
+        "amount": 13.01
+    },
+    {
         "name": "xSehrMotiviert",
-        "amount": 626
+        "amount": 626.0
+    },
+    {
+        "name": "powtops",
+        "amount": 6.0
+    },
+    {
+        "name": "simonxl",
+        "amount": 15.0
+    },
+    {
+        "name": "knightel",
+        "amount": 20.0
+    },
+    {
+        "name": "ItsPhazeRay",
+        "amount": 25.0
+    },
+    {
+        "name": "NYXSOMNIUS",
+        "amount": 86.9
     },
     {
         "name": "Sunnydumpling",
         "amount": 394.14
     },
     {
-        "name": "dawncosmos",
-        "amount": 394.14
+        "name": "Girlspoken",
+        "amount": 73.99
+    },
+    {
+        "name": "PidgeTTV",
+        "amount": 115.0
+    },
+    {
+        "name": "StckOverflw",
+        "amount": 10.0
+    },
+    {
+        "name": "AlexDuzGames",
+        "amount": 30.0
+    },
+    {
+        "name": "quacckson",
+        "amount": 1.0
+    },
+    {
+        "name": "bark3d",
+        "amount": 15.0
+    },
+    {
+        "name": "cafenina",
+        "amount": 10.0
+    },
+    {
+        "name": "rayres0101",
+        "amount": 11.15
+    },
+    {
+        "name": "hanoott",
+        "amount": 5.0
+    },
+    {
+        "name": "IamM4rty",
+        "amount": 17.99
+    },
+    {
+        "name": "ItsaLobster",
+        "amount": 5.0
+    },
+    {
+        "name": "WorldwideMaknae",
+        "amount": 5.0
     },
     {
         "name": "NotNormy",
-        "amount": 180
+        "amount": 180.0
+    },
+    {
+        "name": "ashisafriedpickle",
+        "amount": 16.01
+    },
+    {
+        "name": "tacolikeslemons",
+        "amount": 139.1
+    },
+    {
+        "name": "slippydoge_",
+        "amount": 25.0
+    },
+    {
+        "name": "odin_potter1",
+        "amount": 5.0
+    },
+    {
+        "name": "eldi4k",
+        "amount": 25.0
+    },
+    {
+        "name": "cinnamillieish",
+        "amount": 20.0
     },
     {
         "name": "hughquinn446",
         "amount": 147.21
     },
     {
-        "name": "tacolikeslemons",
-        "amount": 139.10
-    },
-    {
         "name": "moonhiding",
         "amount": 122.65
-    },
-    {
-        "name": "PidgeTTV",
-        "amount": 115 
-    },
-    {
-        "name": "ellieno0te",
-        "amount": 100 
-    },
-    {
-        "name": "NYXSOMNIUS",
-        "amount": 86.90
     }
 ]
