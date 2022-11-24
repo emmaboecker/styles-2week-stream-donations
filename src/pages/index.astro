@@ -1,5 +1,5 @@
 ---
-import Card from "../components/Card.astro";
+import Donation from "../components/Donation.astro";
 import Layout from "../layouts/Layout.astro";
 
 import donationsJson from "../../donations.json";
@@ -7,18 +7,10 @@ import donationsJson from "../../donations.json";
 const donations = donationsJson.sort((a, b) => {
   return b.amount - a.amount;
 });
-
-function getChunked<T>(array: T[], chunkSize: number): T[][] {
-  const list: T[][] = [];
-  for (let i = 0; i < array.length; i += chunkSize) {
-    const chunk = array.slice(i, i + chunkSize);
-    list.push(chunk);
-  }
-  return list;
-}
 ---
 
 <Layout title="Thank you, Chat!">
+  <!-- esthe the goat fr -->
   <main>
     <header class="flex flex-col gap-1 w-full justify-center p-5">
       <h1
@@ -47,18 +39,14 @@ function getChunked<T>(array: T[], chunkSize: number): T[][] {
         Special Thanks to:
       </h2>
       <div class="flex flex-col xl:flex-col m-auto gap-5 w-full">
-        <div class="w-[100%] min-[500px]:w-[70%] xl:w-[40%] h-24 mx-auto">
-          <Card name={donations[0].name} text={`$${donations[0].amount}`} />
+        <div class="h-24 w-full min-[500px]:w-[70%] xl:w-[40%] mx-auto">
+          <Donation {...donations[0]} />
         </div>
         <div
-          class="flex flex-col min-[500px]:flex-row gap-5 w-[100%] xl:w-[70%] m-auto"
+          class="flex flex-col min-[500px]:flex-row gap-5 w-full xl:w-[70%] m-auto"
         >
-          <div class="w-full h-24">
-            <Card name={donations[1].name} text={`$${donations[1].amount}`} />
-          </div>
-          <div class="w-full h-24">
-            <Card name={donations[2].name} text={`$${donations[2].amount}`} />
-          </div>
+          <Donation {...donations[1]} />
+          <Donation {...donations[2]} />
         </div>
       </div>
     </article>
@@ -69,15 +57,9 @@ function getChunked<T>(array: T[], chunkSize: number): T[][] {
         And Thank you to everyone else who donated:
       </h3>
       <div
-        class="grid grid-cols-1 min-[500px]:grid-cols-2 gap-3 min-[500px]:gap-5 w-[100%] xl:w-[70%] m-auto"
+        class="grid grid-cols-1 min-[500px]:grid-cols-2 gap-3 min-[500px]:gap-5 w-full xl:w-[70%] m-auto"
       >
-        {
-          donations.slice(3).map((element) => (
-            <div class="h-24 w-full">
-              <Card name={element.name} text={`$${element.amount}`} />
-            </div>
-          ))
-        }
+        {donations.slice(3).map((donation) => <Donation {...donation} />)}
       </div>
     </article>
   </main>
