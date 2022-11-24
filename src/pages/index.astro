@@ -27,7 +27,7 @@ function getChunked<T>(array: T[], chunkSize: number): T[][] {
         Thank you,
         <span class="text-pink-300">Chat</span>!
       </h1>
-      <h3 class="text-zinc-200 text-lg m-auto w-fit">
+      <p class="text-zinc-200 text-lg m-auto w-fit">
         With the help your donations we could raise <a
           class="text-blue-300"
           href="https://twitter.com/stylesttv/status/1594413004766183429"
@@ -38,7 +38,7 @@ function getChunked<T>(array: T[], chunkSize: number): T[][] {
           href="https://twitter.com/ashtonsfilms"
           target="_blank">Ash</a
         >'s Life!
-      </h3>
+      </p>
     </header>
     <article
       class="flex flex-col gap-5 justify-center m-auto mt-10 w-[85vw] md:w-[70vw] xl:w-[60vw]"
@@ -46,7 +46,7 @@ function getChunked<T>(array: T[], chunkSize: number): T[][] {
       <h2 class="w-fit m-auto text-2xl font-semibold text-blue-200">
         Special Thanks to:
       </h2>
-      <ul class="flex flex-col xl:flex-col m-auto gap-5 w-full">
+      <div class="flex flex-col xl:flex-col m-auto gap-5 w-full">
         <div class="w-[100%] min-[500px]:w-[70%] xl:w-[40%] h-24 mx-auto">
           <Card name={donations[0].name} text={`$${donations[0].amount}`} />
         </div>
@@ -60,7 +60,7 @@ function getChunked<T>(array: T[], chunkSize: number): T[][] {
             <Card name={donations[2].name} text={`$${donations[2].amount}`} />
           </div>
         </div>
-      </ul>
+      </div>
     </article>
     <article
       class="flex flex-col w-[85vw] md:w-[70vw] xl:w-[60vw] m-auto gap-3 min-[500px]:gap-5 py-5"
