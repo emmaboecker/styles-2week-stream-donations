@@ -3,6 +3,8 @@ import Donation from "../components/Donation.astro";
 import Layout from "../layouts/Layout.astro";
 
 import donationsJson from "../../donations.json";
+import ScrollDownButton from "../components/ScrollDownButton.astro";
+import Github from "../components/icons/Github.astro";
 
 const donations = donationsJson.sort((a, b) => {
   return b.amount - a.amount;
@@ -11,12 +13,13 @@ const donations = donationsJson.sort((a, b) => {
 
 <Layout title="Thank you, Chat!">
   <!-- esthe the goat fr -->
+  <ScrollDownButton />
   <main>
     <header class="flex flex-col gap-1 w-full justify-center p-5">
       <h1
         class="text-white py-3 m-auto w-fit text-6xl font-bold bg-gradient-to-r bg-clip-text"
       >
-        Thank you,
+        Thank You,
         <a
           class="text-pink-300"
           href="https://www.twitch.tv/videos/1662226912"
@@ -58,7 +61,7 @@ const donations = donationsJson.sort((a, b) => {
       class="flex flex-col w-[85vw] md:w-[70vw] xl:w-[60vw] m-auto gap-3 min-[500px]:gap-5 py-5"
     >
       <h3 class="w-fit m-auto text-xl font-semibold text-blue-200 my-3">
-        And Thank you to everyone else who donated:
+        And Thank You to everyone else who donated:
       </h3>
       <div
         class="grid grid-cols-1 min-[500px]:grid-cols-2 gap-3 min-[500px]:gap-5 w-full xl:w-[70%] m-auto"
@@ -67,14 +70,41 @@ const donations = donationsJson.sort((a, b) => {
       </div>
     </article>
   </main>
-  <footer class="flex bottom-0 justify-center p-5 text-zinc-400">
-    <p>
+  <article
+    id="styles-text"
+    class="flex flex-col w-[85vw] md:w-[70vw] xl:w-[60vw] break-words justify-start m-auto"
+  >
+    <div class="flex w-full justify-center align-middle m-auto">
+      <h4 class="m-auto text-blue-200 text-2xl font-bold my-4">
+        Thanks for scrolling down, here are some of my thoughts about the stream
+      </h4>
+    </div>
+    <p class="break-words text-zinc-200 xl:w-[80%] mx-auto">
+      Thank you everyone for helping me do this, I will forever be grateful for
+      everyone who not only contributed financially, but to everyone else who
+      stayed throughout the 336 hours I was live for. Big thanks also to my
+      incredible mod team, I could not have done any of this without them. Much
+      love &lt;3
+    </p>
+  </article>
+  <footer
+    class="flex flex-col w-full bottom-0 justify-center p-5 text-zinc-400 z-30"
+  >
+    <p class="mx-auto">
       Made with ❤️ by <a
         class="text-violet-400"
         href="https://twitter.com/StckOverflw"
         target="_blank">@StckOverflw</a
       >
     </p>
+    <a
+      class="text-zinc-400 mx-auto flex flex-row gap-2 align-middle"
+      href="https://github.com/StckOverflw/styles-2week-stream-donations"
+      target="_blank"
+    >
+      <Github />
+      <span class="my-auto">Source Code</span>
+    </a>
   </footer>
 </Layout>
 

@@ -1,0 +1,52 @@
+---
+---
+
+<div
+  class="fixed flex bottom-0 right-5 md:right-20 p-5 justify-center md:justify-end z-20 text-pink-300 font-bold"
+>
+  <button
+    id="scroll-down"
+    class="flex flex-col justify-center align-middle motion-safe:animate-bounce animate-pulse"
+  >
+    <p>A Thank You Note</p>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="2em"
+      height="2em"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 24 24"
+      class="mx-auto"
+    >
+      <path fill="currentColor" d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
+      ></path>
+    </svg>
+  </button>
+</div>
+
+<script>
+  const button = document.getElementById("scroll-down")!;
+  const text = document.getElementById("styles-text")!;
+
+  button.onclick = () => {
+    text.scrollIntoView({ behavior: "smooth" });
+  };
+
+  document.addEventListener("scroll", (e) => {
+    if (isInViewport(text)) {
+      button.classList.add("hidden");
+    } else {
+      button.classList.remove("hidden");
+    }
+  });
+
+  function isInViewport(element: Element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+</script>
